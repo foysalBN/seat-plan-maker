@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.controls {
+  margin-left: 1em;
+}
+
+details {
+  margin-bottom: .8em;
+  margin-top: 0.4em;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.add-room {
+  display: flex;
+  gap: 1em;
+  margin: .2em 1em;
+}
+
+.input-student {
+  margin: .2em 1em;
+
+}
+
+.icon-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 5px;
+
+}
+
+.student-list {
+  margin-left: 1em;
+  margin-top: .9em;
+}
+
+.student-list table {
+  margin-left: 1em;
+}
+
+.student-list thead th {
+  padding-right: 4em;
+}
+
+.student-list tbody td {
+  padding-left: 5px;
+}

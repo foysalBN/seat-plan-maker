@@ -5,9 +5,82 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Seat Plan Maker</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <details open>
+    <summary>Controls</summary>
+    <div class="controls">
+      <details open>
+        <summary><b>Add Room</b></summary>
+        <div class="add-room">
+          <div class="input">
+            <label for="room-name">Room Name</label><br>
+            <input type="text" placeholder="Room Name" />
+          </div>
+          <div class="input">
+            <label for="room-name">Column count</label><br>
+            <input type="text" placeholder="Column count" />
+          </div>
+          <div class="input">
+            <label for="room-name">Seat per column</label><br>
+            <input type="text" placeholder="Seat per column" />
+          </div>
+          <button class="icon-btn">
+            <i height="14" width="14" data-feather="plus"></i>
+            Create Room
+          </button>
+        </div>
+      </details>
+
+      <details open>
+        <summary><b>Add Student List</b></summary>
+        <div class="input-student">
+          <div class="input">
+            <label for="list-name">List Name</label><br>
+            <input type="text" id="list-name" placeholder=" e.g: CST 5th" />
+          </div>
+          <label for="rolls">Enter Rolls</label><br>
+          <textarea name="" id="rolls" cols="60" rows="8"
+            placeholder="One roll each line. &#x0a;eg:&#x0a;10001 &#x0a;10002 &#x0a;10003 &#x0a;&#x0a;You can copy paste from Excel Sheet."></textarea>
+          <button class="icon-btn" id="add-student-list">
+            <i height="14" width="14" data-feather="plus"></i>
+            Add Student list
+          </button>
+        </div>
+      </details>
+    </div>
+  </details>
+
+  <details open>
+    <summary>List</summary>
+    <div class="student-list">
+      <details open>
+        <Summary>Student List</Summary>
+        <table>
+          <thead>
+            <tr>
+              <th>List Name</th>
+              <th>Total Student</th>
+              <th>Remaining Student</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+
+      </details>
+    </div>
+
+  </details>
+
+
+
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>feather.replace()</script>
+  <script src="script.js"></script>
 
 </body>
 
